@@ -67,8 +67,9 @@ public class QuickSort
      *****************************************************/
     public static void qsort( int[] d ) 
     { 
-	//qhelper(d, 0, d.length -1, (d.length -1) / 2 );
-	qhelper(d, 0, d.length -1, d.length-1 );
+	qhelper(d, 0, d.length -1, (d.length -1) / 2 );
+	//	qhelper(d, 0, d.length -1, d.length-1 );
+	//qhelper(d, 0, d.length -1, 0 );
 
     }
 
