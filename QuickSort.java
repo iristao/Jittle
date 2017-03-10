@@ -67,7 +67,9 @@ public class QuickSort
      *****************************************************/
     public static void qsort( int[] d ) 
     { 
-	qhelper(d, 0, d.length -1, (d.length -1) / 2 );
+	//qhelper(d, 0, d.length -1, (d.length -1) / 2 );
+	qhelper(d, 0, d.length -1, d.length-1 );
+
     }
 
     // Thinkers are encouraged to roll their own subroutines.
@@ -128,9 +130,19 @@ public class QuickSort
        	System.out.println("arrN post-shuffle: " );
 	printArr(arrN);
 
+	double timing = 0.00;
+        double begin = 0.00;
 	qsort( arrN );
+        double end = System.nanoTime();
 	System.out.println("arrN after sort: " );
 	printArr(arrN);
+	timing += (end-begin)/1000.0;
+
+	
+	System.out.println((end-begin)/1000.0);
+	    System.out.println("=====================");
+
+
 
 	//get-it-up-and-running, static test case w/ dupes:
 	int [] arr2 = {7,1,5,12,3,7};
@@ -156,6 +168,11 @@ public class QuickSort
 	qsort( arrMatey );
 	System.out.println("arrMatey after sort: " );
 	printArr(arrMatey);
+
+
+
+	//===========================TIME========================
+
 
     }//end main
 
