@@ -130,17 +130,91 @@ public class QuickSort
        	System.out.println("arrN post-shuffle: " );
 	printArr(arrN);
 
+
+
+	//==========================================================
 	double timing = 0.00;
-        double begin = 0.00;
+	
+        double begin = System.nanoTime();
 	qsort( arrN );
         double end = System.nanoTime();
 	System.out.println("arrN after sort: " );
 	printArr(arrN);
 	timing += (end-begin)/1000.0;
+	//System.out.println( (end-begin)/1000.0);
 
+        begin = System.nanoTime();
+	qsort( arrN );
+        end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+	//System.out.println( (end-begin)/1000.0);
+
+        begin = System.nanoTime();
+	qsort( arrN );
+        end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+	//System.out.println( (end-begin)/1000.0);
+
+        begin = System.nanoTime();
+	qsort( arrN );
+        end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+	//System.out.println( (end-begin)/1000.0);
+
+        begin = System.nanoTime();
+	qsort( arrN );
+        end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+
+	begin = System.nanoTime();
+	qsort( arrN );
+        end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+
+        begin = System.nanoTime();
+	qsort( arrN );
+        end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+
+	begin = System.nanoTime();
+	qsort( arrN );
+	end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+
+	begin = System.nanoTime();
+	qsort( arrN );
+	end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
+
+	begin = System.nanoTime();
+	qsort( arrN );
+	end = System.nanoTime();
+	System.out.println("arrN after sort: " );
+	printArr(arrN);
+	timing += (end-begin)/1000.0;
 	
-	System.out.println((end-begin)/1000.0);
-	    System.out.println("=====================");
+	
+
+
+	System.out.println(timing/10.0);//--->> it gets too large. what's wrong with the above code?
+
+	System.out.println("=====================");
 
 
 
