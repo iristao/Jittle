@@ -1,6 +1,6 @@
 public class QuickSortTester{
     /*
-      Our timing mechanism uses System.nanoTime(). It is run once at the very beginning of the test and once at the end, after running the qsort method on an array. We then subtract the time taken at the end with the time taken at the start, to find the time spent on the qsort method alone. This avoids taking into account the time spent generating the array as well as the initial java warm up.
+      Our timing mechanism uses System.nanoTime(). It is run once at the very beginning of the test and once at the end, after running the qsort method on an array. We then subtract the time taken at the end with the time taken at the start, to find the time spent on the qsort method alone. This avoids taking into account the time spent generating the array as well as the initial java warm up. The time found for each test case is then added together and divided by the number of tests to find the average.
      */
     
     //main method for testing
@@ -91,7 +91,7 @@ public class QuickSortTester{
 
 
 	
-	System.out.println(timing);//--->> it gets too large. what's wrong with the above code?
+	System.out.println(timing/10);//--->> it gets too large. what's wrong with the above code?
 
 	System.out.println("=====================");
     }
