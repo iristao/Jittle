@@ -26,6 +26,16 @@ pvt ps = (d.length -1) / 2
  *Avg of 50 tests: 7.2746
   **Runtime = O(nlog(n))
 
+====================================
+Summary of QuickSort algorithm:
+ * QSort(arr): quicksort partitions the array into two arrays, one with unsorted values larger than the partition and one with unsorted values smaller than the partition. It then recursively splits those arrays until each array has only one element, which would make it sorted. All these arrays are then recombined into one single sorted array. 
+ *
+ * 2a. Worst pivot choice / array state and associated runtime: the worst pivot post is 0 or arr.length - 1 because it doesn't split the array evenly and therefore one array must perform more sorts than the other array
+ *
+ * 2b. Best pivot choice / array state and associated runtime: the best pivot choice is arr.length / 2  because it splits the array into halves that can be then partitioned equally, thereby splitting the work equally 
+ *
+ * 3. Approach to handling duplicate values in array: it works out naturally. the duplicate is simply put in the next index over.
+ 
 
 
   
